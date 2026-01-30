@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>oeurusin.id | Jasa Perizinan & Legalitas Usaha Terpercaya</title>
+  <meta name="description" content="oeurusin.id adalah layanan profesional pengurusan izin usaha, PT, CV, NIB OSS, dan legalitas bisnis. Cepat, aman, transparan." />
+  <style>
+    :root{
+      --primary:#0f766e;
+      --dark:#0f172a;
+      --light:#f8fafc;
+      --gray:#64748b;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);line-height:1.6;background:#fff}
+    a{text-decoration:none;color:inherit}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+    .container{max-width:1200px;margin:auto;padding:0 24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+    .logo{font-weight:800;font-size:22px;color:var(--primary)}
+    nav a{margin-left:24px;font-weight:600;color:#334155}
+    .btn{display:inline-block;padding:12px 22px;border-radius:8px;background:var(--primary);color:#fff;font-weight:600}
+    .hero{background:linear-gradient(180deg,#f0fdfa,#ffffff);padding:80px 0}
+    .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+    .hero h1{font-size:44px;line-height:1.2;margin-bottom:16px}
+    .hero p{color:var(--gray);max-width:520px}
+    .trust{display:flex;gap:24px;margin-top:28px;font-size:14px;color:#475569}
+    section{padding:80px 0}
+    .section-title{text-align:center;margin-bottom:48px}
+    .section-title h2{font-size:36px;margin-bottom:8px}
+    .section-title p{color:var(--gray)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .card{border:1px solid #e5e7eb;border-radius:16px;padding:28px;background:#fff}
+    .card h3{margin-top:0}
+    .steps{counter-reset:step}
+    .step{position:relative;padding-left:48px}
+    .step::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .price{font-size:28px;font-weight:800;color:var(--primary)}
+    .faq-item{border-bottom:1px solid #e5e7eb;padding:16px 0}
+    footer{background:#020617;color:#cbd5f5;padding:60px 0}
+    footer a{color:#5eead4}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero h1{font-size:36px}}
+  </style>
+  <script>
+    const translations = {
+      id: {
+        heroTitle: "Urus Izin Usaha Tanpa Ribet",
+        heroDesc: "Kami membantu pengurusan legalitas usaha Anda mulai dari pendirian PT/CV, NIB OSS, hingga izin operasional. Proses cepat, transparan, dan sesuai regulasi.",
+        consult: "Konsultasi Gratis Sekarang",
+        services: "Layanan Kami",
+        prices: "Estimasi Harga",
+        flow: "Alur Pengurusan",
+        faq: "FAQ",
+        contact: "Hubungi Kami"
+      },
+      en: {
+        heroTitle: "Business Licensing Made Easy",
+        heroDesc: "We assist you with business licensing and legal establishment including PT/CV setup, OSS registration, and operational permits. Fast, secure, and compliant.",
+        consult: "Free Consultation",
+        services: "Our Services",
+        prices: "Pricing",
+        flow: "Process Flow",
+        faq: "FAQ",
+        contact: "Contact Us"
+      }
+    };
+
+    function switchLang(lang) {
+      document.getElementById('heroTitle').innerText = translations[lang].heroTitle;
+      document.getElementById('heroDesc').innerText = translations[lang].heroDesc;
+      document.getElementById('consultBtn').innerText = translations[lang].consult;
+      document.getElementById('servicesTitle').innerText = translations[lang].services;
+      document.getElementById('priceTitle').innerText = translations[lang].prices;
+      document.getElementById('flowTitle').innerText = translations[lang].flow;
+      document.getElementById('faqTitle').innerText = translations[lang].faq;
+      document.getElementById('contactTitle').innerText = translations[lang].contact;
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">oeurusin.id</div>
+    <div>
+      <button onclick="switchLang('id')">ID</button>
+      <button onclick="switchLang('en')">EN</button>
+    </div>
+    <nav>
+      <a href="#layanan">Layanan</a>
+      <a href="#harga">Harga</a>
+      <a href="#alur">Alur</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak" class="btn">Konsultasi</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1 id="heroTitle">Urus Izin Usaha Tanpa Ribet</h1>
+      <p id="heroDesc">Kami membantu pengurusan legalitas usaha Anda mulai dari pendirian PT/CV, NIB OSS, hingga izin operasional. Proses cepat, transparan, dan sesuai regulasi.</p>
+      <a href="#kontak" id="consultBtn" class="btn" style="margin-top:20px">Konsultasi Gratis Sekarang</a>
+      <div class="trust">
+        <span>✔ Berpengalaman</span>
+        <span>✔ Legal & Aman</span>
+        <span>✔ Harga Transparan</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Mulai Sekarang</h3>
+      <p>Isi data singkat, tim kami langsung menghubungi Anda.</p>
+      <p><strong>WhatsApp:</strong><br>08xxxxxxxxxx</p>
+    </div>
+  </div>
+</section>
+
+<section id="layanan">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="servicesTitle">Layanan Kami</h2>
+      <p>Solusi lengkap perizinan dan legalitas usaha</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Pendirian PT</h3><p>Akta notaris, SK Kemenkumham, NIB, NPWP.</p></div>
+      <div class="card"><h3>Pendirian CV</h3><p>Cocok untuk UMKM dan usaha pemula.</p></div>
+      <div class="card"><h3>NIB & OSS</h3><p>Pengurusan OSS RBA sesuai KBLI.</p></div>
+      <div class="card"><h3>Izin Usaha</h3><p>SIUP, izin operasional, dan izin sektor khusus.</p></div>
+      <div class="card"><h3>Perubahan Data</h3><p>Direksi, alamat, modal, dan KBLI.</p></div>
+      <div class="card"><h3>Penutupan Usaha</h3><p>Pembubaran perusahaan secara resmi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="harga" style="background:var(--light)">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="priceTitle">Estimasi Harga</h2>
+      <p>Harga transparan, tanpa biaya tersembunyi</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>PT Perorangan</h3><p class="price">Mulai 1,5 jt</p><p>Termasuk NIB & SK.</p></div>
+      <div class="card"><h3>PT Reguler</h3><p class="price">Mulai 3,5 jt</p><p>Akta + OSS lengkap.</p></div>
+      <div class="card"><h3>CV</h3><p class="price">Mulai 2 jt</p><p>Legal untuk UMKM.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="alur">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="flowTitle">Alur Pengurusan</h2>
+      <p>Sederhana dan terpantau</p>
+    </div>
+    <div class="grid steps">
+      <div class="step"><h3>Konsultasi</h3><p>Sampaikan kebutuhan usaha.</p></div>
+      <div class="step"><h3>Dokumen</h3><p>Kami bantu persiapan.</p></div>
+      <div class="step"><h3>Proses</h3><p>Pengurusan sesuai regulasi.</p></div>
+      <div class="step"><h3>Selesai</h3><p>Izin terbit & siap dipakai.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--light)">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="faqTitle">FAQ</h2>
+    </div>
+    <div class="faq-item"><strong>Berapa lama proses izin?</strong><p>Tergantung jenis izin, rata-rata 3–14 hari kerja.</p></div>
+    <div class="faq-item"><strong>Apakah legal?</strong><p>Semua proses sesuai aturan pemerintah.</p></div>
+    <div class="faq-item"><strong>Bisa konsultasi dulu?</strong><p>Bisa, konsultasi gratis.</p></div>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="contactTitle">Hubungi Kami</h2>
+      <p>Tim kami siap membantu Anda</p>
+    </div>
+    <p><strong>Email:</strong> halo@oeurusin.id<br><strong>WhatsApp:</strong> 08xxxxxxxxxx</p>
+  </div>
+</section>
+
+<section style="background:#f1f5f9">
+  <div class="container">
+    <div class="section-title">
+      <h2>Akses Desktop & Windows</h2>
+      <p>Website oeurusin.id dioptimalkan untuk desktop, laptop, dan sistem operasi Windows & macOS dengan tampilan responsif dan performa tinggi.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 oeurusin.id. All rights reserved.</p>
+    <p>Jasa Pengurusan Izin & Legalitas Usaha Indonesia</p>
+  </div>
+</footer>
+
+</body>
+    </html>
+  
